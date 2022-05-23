@@ -1,0 +1,67 @@
+﻿body {
+    background-color: dimgray;
+}
+
+form {
+    max-width: 600px;
+    width: 50%;
+    padding: 1.7rem;
+
+    background-color: gray;
+    box-shadow: rgba(15, 15, 15, 15) .4rem .4rem;
+    border: 1px solid black;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .9rem;
+}
+
+form h1 {
+    text-align: center;
+}
+
+#tbUsername {
+    max-width: 75%;
+
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.buttons {
+    max-width: 75%;
+    margin-right: 15%;
+    margin-left: 15%;
+
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.cs-button {
+    padding: .4rem;
+    border-radius: .4rem;
+
+    box-shadow: rgba(15, 15, 15, 15) .2rem .2rem;
+}
+
+.error-field {
+    background-color: rgba(0, 0, 0, 0);
+
+    color: red;
+
+    font-size: 1.5rem;
+
+    text-align: center;
+
+    border: none;
+}
+
+.error-field:focus {
+    border: none;
+}
