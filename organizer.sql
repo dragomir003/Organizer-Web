@@ -80,6 +80,14 @@ where Korisnik.username = @username);
 
 go
 
+create function GetProjects (@username varchar(32)) returns table as
+return (select Projekat.id as id, Projekat.naziv as naziv, Projekat.opis as opis from Clanstvo
+join Projekat on Projekat.id = Clanstvo.projekat
+join Korisnik on Korisnik.id = Clanstvo.korisnik
+where Korisnik.username = @username);
+
+go
+
 create proc DodajClanstvoBasic
 @korisnik int,
 @projekat int
